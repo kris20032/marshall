@@ -532,6 +532,15 @@ section{padding-block:clamp(64px,8vw,128px)}
 /* === sticky-reserve: brass z ciemnym tekstem (kontrast) === */
 .sticky-reserve .sr-book{color:#14171c}
 
+/* === OPINIE (realne recenzje Google) - dodane dla rodziny auto === */
+.opinie{padding-block:var(--space-9);background:var(--bg)}
+.opinie .head{margin-bottom:var(--space-2)}
+.opinie-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:var(--space-6);margin-top:var(--space-8)}
+.op-card{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-3);box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.op-star{color:var(--accent-d,var(--accent));letter-spacing:.1em;font-size:.95rem}
+.op-card blockquote{margin:0;color:var(--ink-soft);font-size:var(--text-base);line-height:1.6}
+.op-autor{font-family:var(--font-display);font-weight:700;color:var(--ink);font-size:.95rem}
+
 /* === NAV NOBU (silnik): auto === */
 .nav{position:fixed;left:0;right:0;backdrop-filter:none;border-bottom:1px solid transparent;z-index:100;transition:transform .35s var(--ease),background .35s ease,box-shadow .35s ease}
 .nav.nav-hidden{transform:translateY(-100%)}
